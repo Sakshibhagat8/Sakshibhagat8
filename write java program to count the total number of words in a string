@@ -1,0 +1,18 @@
+import java.util.Scanner;
+class java{
+    public static void main(String args[])
+    {
+        int i,word=1;
+        String s=new String();
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the string");
+        s=sc.nextLine();
+        for(i=0;i<s.length();i++)
+        {
+            if(s.charAt(i)==' ' && s.charAt(i+1)!=' ')
+            word=word+1;
+        }
+        System.out.println("Total number of word="+word);
+        
+    }
+}
