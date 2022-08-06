@@ -1,0 +1,17 @@
+import java.util.Scanner;
+class Java{
+    public static void main(String args[])
+    {
+        String a=new String();
+        String b=new String();
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter 1st string");
+        a=sc.nextLine();
+        System.out.println("Enter 2nd string");
+        b=sc.nextLine();
+        if(a.equals(b))
+           System.out.println("BOTH STRING ARE EQUALS");
+        else
+            System.out.println("string are not equal");
+    }
+}
