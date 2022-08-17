@@ -1,0 +1,25 @@
+import java.util.Scanner;
+class Prime{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int n,i=1,c=0;
+        System.out.println("Enter the number:");
+        n=sc.nextInt();
+        while(i<=n)
+        {
+            if(n%i==0)
+               c++;
+            
+            i=i+1;   
+        }
+        if(c==2)
+        {
+            System.out.println("It is prime number");
+        }
+        else
+        {
+            System.out.println("It is not prime number");
+        }
+    }
+}
