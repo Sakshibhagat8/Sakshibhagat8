@@ -1,0 +1,31 @@
+public class Main{
+    public static void main(String args[])
+    {
+        int row1,col1;
+        int sumRow=0,sumCol=0;
+        int a[][]={{1,1,1},{2,2,2},{3,3,3}};
+        int b[][]={{3,3,3},{4,4,4},{5,5,5}};
+        row1=a.length;
+        col1=a[0].length;
+        for(int i=0;i<row1;i++)
+        {
+            sumRow=0;
+            for(int j=0;j<col1;j++)
+            {
+                sumRow=sumRow+a[i][j];
+            }
+            System.out.println("Sum of rows in matrix :"+sumRow);
+        }
+        for(int i=0;i<col1;i++)
+        {
+            sumCol=0;
+            for(int j=0;j<row1;j++)
+            {
+                sumCol=sumCol+a[j][i];
+                
+            }
+            System.out.println("Sum of colums in matrix is "+sumCol);
+        }
+        
+    }
+}
